@@ -1,0 +1,167 @@
+/*ESTILOS GENERALES*/
+
+html,body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto',sans-serif; /*Tipografía para todas las páginas*/
+    background-color: #e7e7db;
+    overflow-x: hidden;
+
+    /*Posicionamiento*/
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/*ESTILOS GENERALES*/
+
+/*CABECERA*/
+header{
+    background-color: #0f453d;
+    top:0;
+    left: 0;
+    right:0;
+}
+
+header h1{
+    text-align: center;
+}
+
+header a img{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+/*CABECERA*/
+
+/* BARRA DE NAVEGACIÓN*/
+nav{
+    background-color: #205140;
+    padding:10px;
+    width: 100%;
+}
+
+nav ul{
+    display: inline;
+}
+
+nav ul li{
+    float: left;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav li a{
+    text-decoration: none;
+    color:white;
+}
+
+nav li a:hover{
+    color:#e7d0e7;
+}
+
+nav input{
+    float:right;
+    margin-right: 30px;
+}
+
+nav input[type="button"]{
+    background-color: #417454;
+    border-radius: 5px;
+    border-color: #a7dc92;
+    color:white;
+}
+
+nav input[type="search"]{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: #a7dc92;
+    color:rgb(255, 255, 255);
+}
+/* BARRA DE NAVEGACIÓN*/
+
+/* CONTENIDO DEL MAIN*/
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+main article{
+    margin:10px;
+}
+
+main article h6,p{
+    margin: 0.5 auto;
+    color:#313131;
+}
+
+main img{
+    width: 200px;
+    height: 150px;
+    border: 5px solid rgb(55, 68, 59);
+    margin:2px;
+}
+/* CONTENIDO DEL MAIN*/
+
+/* SECTION SECUNDARIA DE INFORMACION*/
+section.informacion{
+    display: flex;
+    margin:0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    width:80%;
+    height: 100%;
+    background-color: #b5ccac;
+}
+
+section.informacion p{
+    margin: auto;
+    padding: 2px;
+    color:#313131;
+}
+/* SECTION DE INFORMACION*/
+
+/*FOOTER*/
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #051f26;
+    height: 50px;
+    color: #ffffff;
+}
+
+footer h5,ul{
+    margin-left: 10px;
+}
+/*FOOTER*/
+
+/*ESTILOS PARA LA GALERÍA*/
+section#galeria{
+    display: flex;
+    width:600px;
+    height: 350px;
+    margin: auto;
+}
+
+section#galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section#galeria img:hover{
+    cursor: crosshair;
+    width:300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
